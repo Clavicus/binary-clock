@@ -39,6 +39,8 @@ html, body {
 
 input {
 	position: fixed;
+	top: 5px;
+	left: 5px;
 	border: none;
 	background-color: #191919;
 	z-index: 10;
