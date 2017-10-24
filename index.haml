@@ -1,5 +1,15 @@
-.container
-	.hourOne{:'data-tid' => 0}
+!!!
+%html
+  %head
+    %meta{:charset => "UTF-8"}/
+    %title Binary Clock
+    %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
+    %link{:href => "css/reset.css", :rel => "stylesheet"}/
+    %link{:href => "css/style.css", :rel => "stylesheet"}/
+  %body
+    %input{:type => "color", :value => "#FFFFFF"}/
+    .container
+    	.hourOne{:'data-tid' => 0}
 		-4.times do
 			.dot.one
 	.hourTwo{:'data-tid' => 0}
@@ -17,3 +27,6 @@
 	.secTwo{:'data-tid' => 2}
 		-4.times do
 			.dot.one
+    %script{:src => "js/script.js"}
+
+
