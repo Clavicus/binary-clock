@@ -11,18 +11,18 @@
 		function updateDOM() {
 			var time = getTime(),
 			    columns = document.querySelectorAll('.container > div');
-			var a = undefined,
-			    index = 0;
+			var a = undefined;
 			// Reset Lights //
 			a = document.querySelectorAll('.one');
 			for (var i = 0; i < a.length; i++) {
 				a[i].classList.remove('one');
 			} // Assign Lights //
 			for (var j = 0, len = columns.length; j < len; j++) {
-				a = b_i[time[columns[j].dataset.tid][index]];
+				// Iterates over 6 columns
+				a = b_i[time[0 | j / 2][j % 2]]; // Assigns Array of vertical dot positions to <a> from b_i
 				for (var k = 0, _len = a.length; k < _len; k++) {
 					columns[j].children[a[k]].classList.add('one');
-				}index = Number(!index);
+				}
 			}
 		}setInterval(updateDOM, 1000);updateDOM();
 	};
