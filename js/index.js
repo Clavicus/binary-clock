@@ -14,13 +14,12 @@
 			var a = undefined;
 			// Reset Lights //
 			a = document.querySelectorAll('.one');
-			for (var i = 0; i < a.length; i++) {
+			for (var i = 0, len = a.length; i < len; i++) {
 				a[i].classList.remove('one');
 			} // Assign Lights //
-			for (var j = 0, len = columns.length; j < len; j++) {
-				// Iterates over 6 columns
-				a = b_i[time[0 | j / 2][j % 2]]; // Assigns Array of vertical dot positions to <a> from b_i
-				for (var k = 0, _len = a.length; k < _len; k++) {
+			for (var j = 0, _len = columns.length; j < _len; j++) {
+				a = b_i[time[0 | j / 2][j % 2]];
+				for (var k = 0, __len = a.length; k < __len; k++) {
 					columns[j].children[a[k]].classList.add('one');
 				}
 			}
