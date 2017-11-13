@@ -11,16 +11,15 @@
 		function updateDOM() {
 			var time = getTime(),
 			    columns = document.querySelectorAll('.container > div');
-			var a = undefined;
 			// Reset Lights //
-			a = document.querySelectorAll('.one');
+			var a = document.querySelectorAll('.one');
 			for (var i = 0, len = a.length; i < len; i++) {
 				a[i].classList.remove('one');
 			} // Assign Lights //
 			for (var j = 0, _len = columns.length; j < _len; j++) {
-				a = b_i[time[0 | j / 2][j % 2]];
-				for (var k = 0, __len = a.length; k < __len; k++) {
-					columns[j].children[a[k]].classList.add('one');
+				var b = b_i[time[0 | j / 2][j % 2]];
+				for (var k = 0, __len = b.length; k < __len; k++) {
+					columns[j].children[b[k]].classList.add('one');
 				}
 			}
 		}setInterval(updateDOM, 1000);updateDOM();
