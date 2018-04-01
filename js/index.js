@@ -4,7 +4,8 @@
 	window.onload = function () {
 		var binaryIndexes = [[], [3], [2], [2, 3], [1], [1, 3], [1, 2], [1, 2, 3], [0], [0, 3]];
 		function updateDOM() {
-			var time = new Date().toLocaleTimeString().split(/:| /).map(function (t) {
+			var
+			time = new Date().toLocaleTimeString().split(/:| /).map(function (t) {
 				return t.padStart(2, '0');
 			}),
 			    columns = document.querySelectorAll('.container > div');
