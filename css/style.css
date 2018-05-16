@@ -1,9 +1,7 @@
-
 :root {
 	--oneColors: #FFFFFF;
 	--zeroColors: #171717;
 }
-
 html, body {
 	background: black;
 	width: 100%;
@@ -12,7 +10,6 @@ html, body {
 	margin:0;
 	padding:0;
 }
-
 .container {
 	display: flex;
 	justify-content: center;
@@ -20,7 +17,6 @@ html, body {
 	top: 25vmin;
 	margin:auto;
 }
-
 .dot {
 	margin: 4vmin;
 	background: var(--zeroColors);
@@ -30,33 +26,5 @@ html, body {
 	transition: all 0.2s ease-in-out;
 	/*box-shadow: 0 0 0 1px var(--oneColors);*/
 }
+.one {background: var(--oneColors)}
 
-.one {
-	background: var(--oneColors);
-}
-
-input {
-	position: fixed;
-	top: 5px;
-	left: 5px;
-	border: none;
-	background-color: #191919;
-	z-index: 10;
-	transition: all 0.2s ease-in-out;
-}
-
-input:hover {
-	background-color: white;
-}
-
-input:focus {
-	outline: 0;
-}
-
-/* ---------------------- Hiding unnecessary dots --------------------*/
-.hourOne div:nth-child(1),
-.hourOne div:nth-child(2),
-.minOne div:nth-child(1),
-.secOne div:nth-child(1)
-{visibility: hidden}
-/*------------------------------------------------------------------*/
